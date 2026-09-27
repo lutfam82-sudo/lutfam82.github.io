@@ -1,0 +1,1283 @@
+<!doctype html>
+<html
+  lang="bn"
+  data-bn-title="ভোমরাদহ উচ্চ বিদ্যালয় — হোম"
+  data-en-title="Bhomradaha High School — Home"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ভোমরাদহ উচ্চ বিদ্যালয় — Bhomradaha High School. Established 1958. EIIN: 129647. Pirganj, Thakurgaon."
+    />
+    <title>ভোমরাদহ উচ্চ বিদ্যালয় — হোম</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+     শীর্ষ বার — Top Announcement Bar
+     এখানে বিজ্ঞপ্তি ও ডেভেলপার ব্যাজ আছে
+     ============================================================ -->
+    <div class="top-bar" role="banner">
+      <div class="top-bar-left">
+        <!-- স্কুলের স্থায়ী তথ্য -->
+        <div class="top-bar-tagline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+            />
+          </svg>
+          <span data-bn="পিরগঞ্জ, ঠাকুরগাঁও" data-en="Pirganj, Thakurgaon"
+            >পিরগঞ্জ, ঠাকুরগাঁও</span
+          >
+          &nbsp;·&nbsp;
+          <span data-bn="প্রতিষ্ঠিত: ১৯৫৮" data-en="Est: 1958"
+            >প্রতিষ্ঠিত: ১৯৫৮</span
+          >
+        </div>
+        <!-- AHASAN ডেভেলপার ব্যাজ -->
+        <button
+          class="ahasan-badge"
+          onclick="openDevModal()"
+          aria-label="Developer Info"
+        >
+          <span class="pulse-dot"></span>
+          ✨ By AHASAN
+        </button>
+      </div>
+
+      <div class="top-bar-right">
+        <!-- ভাষা টগল -->
+        <div class="lang-toggle" role="group" aria-label="Language Toggle">
+          <button
+            class="lang-btn active"
+            data-lang="bn"
+            onclick="setLanguage('bn')"
+          >
+            বাংলা
+          </button>
+          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">
+            EN
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+     নেভিগেশন বার — Sticky Glassmorphism Navbar
+     মেনু আইটেম পরিবর্তন করতে এখানে দেখুন
+     ============================================================ -->
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <div class="nav-container">
+        <!-- স্কুল লোগো ও নাম -->
+        <a
+          href="index.html"
+          class="nav-logo"
+          aria-label="Bhomradaha High School Home"
+        >
+          <div class="school-crest" aria-hidden="true">
+            <img class="lo" src="image/BHS.png" alt="nav-logo" srcset="" />
+          </div>
+          <div class="school-name-nav">
+            <span class="school-name-bn">ভোমরাদহ উচ্চ বিদ্যালয়</span>
+            <span class="school-name-en">Bhomradaha High School</span>
+            <span class="portal-by">Portal By AHASAN · EIIN: 129647</span>
+          </div>
+        </a>
+
+        <!-- হ্যামবার্গার (মোবাইলের জন্য) -->
+        <button
+          id="hamburger"
+          class="hamburger"
+          aria-label="Toggle Navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- মূল মেনু -->
+        <ul id="nav-menu" class="nav-menu" role="menubar">
+          <li role="none">
+            <a
+              href="index.html"
+              class="active-link"
+              role="menuitem"
+              data-bn="হোম"
+              data-en="Home"
+              >হোম</a
+            >
+          </li>
+          <li role="none">
+            <a
+              href="html/Faculty.html"
+              role="menuitem"
+              data-bn="শিক্ষকবৃন্দ"
+              data-en="Faculty"
+              >শিক্ষকবৃন্দ</a
+            >
+          </li>
+          <li class="has-dropdown" role="none">
+            <a
+              href="html/Student.html"
+              role="menuitem"
+              data-bn="শিক্ষার্থী"
+              data-en="Students"
+              >শিক্ষার্থী</a
+            >
+            <ul class="dropdown" role="menu">
+              <li>
+                <a
+                  href="html/class6.html"
+                  role="menuitem"
+                  data-bn="৬ষ্ঠ শ্রেণী"
+                  data-en="Class 6"
+                  >৬ষ্ঠ শ্রেণী</a
+                >
+              </li>
+              <li>
+                <a
+                  href="html/class7.html"
+                  role="menuitem"
+                  data-bn="৭ম শ্রেণী"
+                  data-en="Class 7"
+                  >৭ম শ্রেণী</a
+                >
+              </li>
+              <li>
+                <a
+                  href="html/class8.html"
+                  role="menuitem"
+                  data-bn="৮ম শ্রেণী"
+                  data-en="Class 8"
+                  >৮ম শ্রেণী</a
+                >
+              </li>
+              <li>
+                <a
+                  href="html/class9.html"
+                  role="menuitem"
+                  data-bn="৯ম শ্রেণী"
+                  data-en="Class 9"
+                  >৯ম শ্রেণী</a
+                >
+              </li>
+              <li>
+                <a
+                  href="html/class10.html"
+                  role="menuitem"
+                  data-bn="১০ম শ্রেণী"
+                  data-en="Class 10"
+                  >১০ম শ্রেণী</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li role="none">
+            <a
+              href="html/Admission.html"
+              role="menuitem"
+              data-bn="ভর্তি"
+              data-en="Admission"
+              >ভর্তি</a
+            >
+          </li>
+          <li role="none">
+            <a
+              href="html/contract.html"
+              role="menuitem"
+              data-bn="যোগাযোগ"
+              data-en="Contact"
+              >যোগাযোগ</a
+            >
+          </li>
+          <li class="has-dropdown" role="none">
+            <a href="#" role="menuitem" data-bn="প্রশাসন" data-en="Admin"
+              >প্রশাসন</a
+            >
+            <ul class="dropdown" role="menu">
+              <li>
+                <a
+                  href="html/headteacher.html"
+                  role="menuitem"
+                  data-bn="প্রধান শিক্ষক"
+                  data-en="Head Teacher"
+                  >প্রধান শিক্ষক</a
+                >
+              </li>
+              <li>
+                <a
+                  href="html/assistant-head.html"
+                  role="menuitem"
+                  data-bn="সহকারী প্রধান"
+                  data-en="Asst. Head"
+                  >সহকারী প্রধান</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- ডেস্কটপ ভাষা টগল (নেভবারে) -->
+        <div
+          class="lang-toggle"
+          style="flex-shrink: 0"
+          role="group"
+          aria-label="Language"
+        >
+          <button
+            class="lang-btn active"
+            data-lang="bn"
+            onclick="setLanguage('bn')"
+          >
+            বাংলা
+          </button>
+          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">
+            EN
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ============================================================
+     হিরো সেকশন — Cinematic Hero Banner
+     ============================================================ -->
+    <section class="hero" aria-label="School Banner">
+      <div class="hero-content">
+        <div class="hero-left">
+          <!-- Architecture Badge -->
+          <div class="hero-badge-arch">
+            <span>✨</span>
+            <span
+              data-bn="ওয়েব আর্কিটেকচার By AHASAN"
+              data-en="Web Architecture By AHASAN"
+              >ওয়েব আর্কিটেকচার By AHASAN</span
+            >
+          </div>
+
+          <!-- School Name -->
+          <div class="hero-school-label">
+            <span
+              class="hero-est-badge"
+              data-bn="প্রতিষ্ঠিত ১৯৫৮"
+              data-en="Est. 1958"
+              >প্রতিষ্ঠিত ১৯৫৮</span
+            >
+          </div>
+
+          <h1>
+            <span class="hero-school-bn">ভোমরাদহ উচ্চ বিদ্যালয়</span>
+            <span
+              class="hero-school-en"
+              data-bn="ভোমরাদহ উচ্চ বিদ্যালয়"
+              data-en="Bhomradaha High School"
+              >Bhomradaha High School</span
+            >
+          </h1>
+
+          <p
+            class="hero-tagline"
+            data-bn="মানসম্পন্ন শিক্ষা ও চরিত্র গঠনের মাধ্যমে আগামীর সুনাগরিক তৈরি করছে ভোমরাদহ উচ্চ বিদ্যালয় — ১৯৫৮ সাল থেকে আজ পর্যন্ত।"
+            data-en="Bhomradaha High School has been nurturing future citizens through quality education and character building since 1958 — a legacy of excellence in Pirganj, Thakurgaon."
+          >
+            মানসম্পন্ন শিক্ষা ও চরিত্র গঠনের মাধ্যমে আগামীর সুনাগরিক তৈরি করছে
+            ভোমরাদহ উচ্চ বিদ্যালয় — ১৯৫৮ সাল থেকে আজ পর্যন্ত।
+          </p>
+
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <span>📍</span>
+              <span data-bn="পিরগঞ্জ, ঠাকুরগাঁও" data-en="Pirganj, Thakurgaon"
+                >পিরগঞ্জ, ঠাকুরগাঁও</span
+              >
+            </div>
+            <div class="hero-meta-item">
+              <span>🆔</span>
+              <span><strong>EIIN:</strong> 129647</span>
+            </div>
+            <div class="hero-meta-item">
+              <span>📅</span>
+              <span data-bn="প্রতিষ্ঠা: ১৯৫৮" data-en="Founded: 1958"
+                >প্রতিষ্ঠা: ১৯৫৮</span
+              >
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="html/Admission.html" class="btn-primary">
+              📝
+              <span data-bn="ভর্তির আবেদন করুন" data-en="Apply for Admission"
+                >ভর্তির আবেদন করুন</span
+              >
+            </a>
+            <a href="html/Faculty.html" class="btn-outline">
+              👨‍🏫
+              <span data-bn="শিক্ষকবৃন্দ দেখুন" data-en="Meet Our Faculty"
+                >শিক্ষকবৃন্দ দেখুন</span
+              >
+            </a>
+          </div>
+        </div>
+
+        <!-- Right glass card -->
+        <aside class="hero-card" aria-label="Quick Info">
+          <p
+            class="hero-card-title"
+            data-bn="⚡ দ্রুত তথ্য"
+            data-en="⚡ Quick Info"
+          >
+            ⚡ দ্রুত তথ্য
+          </p>
+          <ul class="quick-info-list">
+            <li class="quick-info-item">
+              <div class="quick-info-icon">🏛️</div>
+              <div>
+                <div
+                  class="quick-info-label"
+                  data-bn="বিদ্যালয়ের ধরন"
+                  data-en="School Type"
+                >
+                  বিদ্যালয়ের ধরন
+                </div>
+                <div
+                  class="quick-info-value"
+                  data-bn="মাধ্যমিক বিদ্যালয়"
+                  data-en="Secondary School"
+                >
+                  মাধ্যমিক বিদ্যালয়
+                </div>
+              </div>
+            </li>
+            <li class="quick-info-item">
+              <div class="quick-info-icon">📚</div>
+              <div>
+                <div
+                  class="quick-info-label"
+                  data-bn="শ্রেণীসমূহ"
+                  data-en="Classes"
+                >
+                  শ্রেণীসমূহ
+                </div>
+                <div
+                  class="quick-info-value"
+                  data-bn="৬ষ্ঠ থেকে ১০ম শ্রেণী"
+                  data-en="Class 6 to Class 10"
+                >
+                  ৬ষ্ঠ থেকে ১০ম শ্রেণী
+                </div>
+              </div>
+            </li>
+            <li class="quick-info-item">
+              <div class="quick-info-icon">📞</div>
+              <div>
+                <div
+                  class="quick-info-label"
+                  data-bn="হটলাইন"
+                  data-en="Hotline"
+                >
+                  হটলাইন
+                </div>
+                <div class="quick-info-value">01700-000000</div>
+              </div>
+            </li>
+            <li class="quick-info-item">
+              <div class="quick-info-icon">🕗</div>
+              <div>
+                <div
+                  class="quick-info-label"
+                  data-bn="ক্লাস সময়"
+                  data-en="School Hours"
+                >
+                  ক্লাস সময়
+                </div>
+                <div
+                  class="quick-info-value"
+                  data-bn="সকাল ৯টা – বিকাল ৪টা"
+                  data-en="9 AM – 4 PM"
+                >
+                  সকাল ৯টা – বিকাল ৪টা
+                </div>
+              </div>
+            </li>
+            <li class="quick-info-item">
+              <div class="quick-info-icon">📧</div>
+              <div>
+                <div class="quick-info-label" data-bn="ইমেইল" data-en="Email">
+                  ইমেইল
+                </div>
+                <div class="quick-info-value">bhspirganj@edu.bd</div>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- Bottom wave -->
+      <div class="hero-wave" aria-hidden="true">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 60"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"
+            fill="#2563EB"
+            opacity="0.3"
+          />
+          <path
+            d="M0,40 C400,10 1040,55 1440,35 L1440,60 L0,60 Z"
+            fill="#ffffff"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     বিজ্ঞপ্তি টিকার — Scrolling Notice Ticker
+     নোটিস পরিবর্তন করতে নিচের ticker-item গুলো সম্পাদনা করুন
+     ============================================================ -->
+    <section class="notice-ticker" aria-label="Running Notices">
+      <div class="ticker-label" data-bn="📢 বিজ্ঞপ্তি" data-en="📢 Notice">
+        📢 বিজ্ঞপ্তি
+      </div>
+      <div class="ticker-track">
+        <div class="ticker-content" aria-live="polite">
+          <!-- টিকার আইটেম — এখানে নতুন নোটিস যোগ করুন -->
+          <span
+            class="ticker-item"
+            data-bn="২০২৫ সালের বার্ষিক পরীক্ষার সময়সূচী প্রকাশিত হয়েছে।"
+            data-en="Annual exam schedule for 2025 has been published."
+            >২০২৫ সালের বার্ষিক পরীক্ষার সময়সূচী প্রকাশিত হয়েছে।</span
+          >
+          <span class="ticker-sep">◆</span>
+          <span
+            class="ticker-item"
+            data-bn="নতুন শিক্ষাবর্ষে ষষ্ঠ শ্রেণীতে ভর্তি চলছে — আসন সীমিত।"
+            data-en="Admission to Class 6 for new academic year is ongoing — seats limited."
+            >নতুন শিক্ষাবর্ষে ষষ্ঠ শ্রেণীতে ভর্তি চলছে — আসন সীমিত।</span
+          >
+          <span class="ticker-sep">◆</span>
+          <span
+            class="ticker-item"
+            data-bn="JSC পরীক্ষায় বিদ্যালয়ের পাসের হার ৯৮% — অভিনন্দন সকল শিক্ষার্থীদের।"
+            data-en="School achieves 98% pass rate in JSC — congratulations to all students."
+            >JSC পরীক্ষায় বিদ্যালয়ের পাসের হার ৯৮% — অভিনন্দন সকল
+            শিক্ষার্থীদের।</span
+          >
+          <span class="ticker-sep">◆</span>
+          <span
+            class="ticker-item"
+            data-bn="বার্ষিক ক্রীড়া প্রতিযোগিতা আগামী ১৫ ডিসেম্বর অনুষ্ঠিত হবে।"
+            data-en="Annual Sports Competition will be held on 15th December."
+            >বার্ষিক ক্রীড়া প্রতিযোগিতা আগামী ১৫ ডিসেম্বর অনুষ্ঠিত হবে।</span
+          >
+          <span class="ticker-sep">◆</span>
+          <span
+            class="ticker-item"
+            data-bn="অভিভাবক সমাবেশ আগামী রোববার সকাল ১০টায় অনুষ্ঠিত হবে।"
+            data-en="Parent-Teacher Meeting will be held next Sunday at 10 AM."
+            >অভিভাবক সমাবেশ আগামী রোববার সকাল ১০টায় অনুষ্ঠিত হবে।</span
+          >
+          <span class="ticker-sep">◆</span>
+          <!-- টিকার লুপের জন্য একই বিষয়বস্তু পুনরাবৃত্তি -->
+          <span
+            class="ticker-item"
+            data-bn="২০২৫ সালের বার্ষিক পরীক্ষার সময়সূচী প্রকাশিত হয়েছে।"
+            data-en="Annual exam schedule for 2025 has been published."
+            >২০২৫ সালের বার্ষিক পরীক্ষার সময়সূচী প্রকাশিত হয়েছে।</span
+          >
+          <span class="ticker-sep">◆</span>
+          <span
+            class="ticker-item"
+            data-bn="নতুন শিক্ষাবর্ষে ষষ্ঠ শ্রেণীতে ভর্তি চলছে — আসন সীমিত।"
+            data-en="Admission to Class 6 for new academic year is ongoing — seats limited."
+            >নতুন শিক্ষাবর্ষে ষষ্ঠ শ্রেণীতে ভর্তি চলছে — আসন সীমিত।</span
+          >
+          <span class="ticker-sep">◆</span>
+          <span
+            class="ticker-item"
+            data-bn="JSC পরীক্ষায় বিদ্যালয়ের পাসের হার ৯৮% — অভিনন্দন সকল শিক্ষার্থীদের।"
+            data-en="School achieves 98% pass rate in JSC — congratulations to all students."
+            >JSC পরীক্ষায় বিদ্যালয়ের পাসের হার ৯৮% — অভিনন্দন সকল
+            শিক্ষার্থীদের।</span
+          >
+          <span class="ticker-sep">◆</span>
+          <span
+            class="ticker-item"
+            data-bn="বার্ষিক ক্রীড়া প্রতিযোগিতা আগামী ১৫ ডিসেম্বর অনুষ্ঠিত হবে।"
+            data-en="Annual Sports Competition will be held on 15th December."
+            >বার্ষিক ক্রীড়া প্রতিযোগিতা আগামী ১৫ ডিসেম্বর অনুষ্ঠিত হবে।</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     পরিসংখ্যান — Stats Counter Section
+     সংখ্যা পরিবর্তন করতে data-target মান সম্পাদনা করুন
+     ============================================================ -->
+    <section class="stats-section" aria-label="School Statistics">
+      <div class="stats-container">
+        <div class="stat-card gold reveal">
+          <div class="stat-icon">👨‍🎓</div>
+          <div class="stat-number" data-target="680">০</div>
+          <div
+            class="stat-label"
+            data-bn="মোট শিক্ষার্থী"
+            data-en="Total Students"
+          >
+            মোট শিক্ষার্থী
+          </div>
+        </div>
+        <div class="stat-card blue reveal">
+          <div class="stat-icon">👩‍🏫</div>
+          <div class="stat-number" data-target="15">০</div>
+          <div
+            class="stat-label"
+            data-bn="অভিজ্ঞ শিক্ষক"
+            data-en="Experienced Teachers"
+          >
+            অভিজ্ঞ শিক্ষক
+          </div>
+        </div>
+        <div class="stat-card emerald reveal">
+          <div class="stat-icon">🏆</div>
+          <div class="stat-number stat-pct" data-target="98">০</div>
+          <div class="stat-label" data-bn="% পাসের হার" data-en="% Pass Rate">
+            % পাসের হার
+          </div>
+        </div>
+        <div class="stat-card red reveal">
+          <div class="stat-icon">📅</div>
+          <div class="stat-number" data-target="67">০</div>
+          <div
+            class="stat-label"
+            data-bn="বছরের অভিজ্ঞতা"
+            data-en="Years of Excellence"
+          >
+            বছরের অভিজ্ঞতা
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     আমাদের সম্পর্কে — About School Section
+     ============================================================ -->
+    <section class="about-section" aria-label="About School">
+      <div class="about-container">
+        <!-- স্কুল ক্যাম্পাস ছবি (বাস্তব ছবি হলে CSS placeholder সরান) -->
+        <div class="about-image-wrap reveal">
+          <div class="about-img-placeholder">
+            <div class="about-img-icon">
+              <img src="image/Campas.jpg" alt="Campas" srcset="" />
+            </div>
+          </div>
+          <div class="about-img-badge">
+            <span class="badge-number">১৯৫৮</span>
+            <span class="badge-text" data-bn="প্রতিষ্ঠিত" data-en="Established"
+              >প্রতিষ্ঠিত</span
+            >
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <p class="about-eyebrow" data-bn="আমাদের সম্পর্কে" data-en="About Us">
+            আমাদের সম্পর্কে
+          </p>
+          <h2
+            class="about-title"
+            data-bn="শিক্ষার আলোয় আলোকিত ৬৭ বছর"
+            data-en="67 Years of Educational Excellence"
+          >
+            শিক্ষার আলোয় আলোকিত ৬৭ বছর
+          </h2>
+          <p
+            class="about-body"
+            data-bn="ভোমরাদহ উচ্চ বিদ্যালয় ১৯৫৮ সালে পিরগঞ্জ উপজেলা, ঠাকুরগাঁও জেলায় প্রতিষ্ঠিত হয়। গত ছয় দশকেরও বেশি সময় ধরে এই বিদ্যালয় হাজার হাজার শিক্ষার্থীর জীবন গড়ার কাজে নিবেদিত। আমাদের দক্ষ ও অভিজ্ঞ শিক্ষকমণ্ডলী প্রতিটি শিক্ষার্থীর সামগ্রিক বিকাশে অগ্রণী ভূমিকা পালন করে আসছেন।"
+            data-en="Bhomradaha High School was established in 1958 in Pirganj Upazila, Thakurgaon District. For over six decades, this institution has been dedicated to shaping the lives of thousands of students. Our experienced and dedicated faculty plays a leading role in the holistic development of every student."
+          >
+            ভোমরাদহ উচ্চ বিদ্যালয় ১৯৫৮ সালে পিরগঞ্জ উপজেলা, ঠাকুরগাঁও জেলায়
+            প্রতিষ্ঠিত হয়। গত ছয় দশকেরও বেশি সময় ধরে এই বিদ্যালয় হাজার হাজার
+            শিক্ষার্থীর জীবন গড়ার কাজে নিবেদিত।
+          </p>
+          <p
+            class="about-body"
+            data-bn="EIIN নম্বর ১২৯৬৪৭ বিশিষ্ট এই বিদ্যালয়টি জাতীয় শিক্ষা বোর্ডের অধীনে পরিচালিত হয় এবং ষষ্ঠ থেকে দশম শ্রেণী পর্যন্ত মানসম্পন্ন শিক্ষা প্রদান করে থাকে।"
+            data-en="Registered under EIIN 129647, the school operates under the National Education Board and provides quality education from Class 6 to Class 10."
+          >
+            EIIN নম্বর ১২৯৬৪৭ বিশিষ্ট এই বিদ্যালয়টি জাতীয় শিক্ষা বোর্ডের অধীনে
+            পরিচালিত হয় এবং ষষ্ঠ থেকে দশম শ্রেণী পর্যন্ত মানসম্পন্ন শিক্ষা
+            প্রদান করে থাকে।
+          </p>
+
+          <div class="about-highlights">
+            <div class="about-highlight-item">
+              <span class="highlight-dot"></span
+              ><span
+                data-bn="দক্ষ ও অভিজ্ঞ শিক্ষক পরিষদ"
+                data-en="Experienced & dedicated teaching staff"
+                >দক্ষ ও অভিজ্ঞ শিক্ষক পরিষদ</span
+              >
+            </div>
+            <div class="about-highlight-item">
+              <span class="highlight-dot"></span
+              ><span
+                data-bn="উন্নত ও পরিচ্ছন্ন বিদ্যালয় পরিবেশ"
+                data-en="Clean and modern school environment"
+                >উন্নত ও পরিচ্ছন্ন বিদ্যালয় পরিবেশ</span
+              >
+            </div>
+            <div class="about-highlight-item">
+              <span class="highlight-dot"></span
+              ><span
+                data-bn="নিয়মিত অভিভাবক-শিক্ষক সভা"
+                data-en="Regular parent-teacher meetings"
+                >নিয়মিত অভিভাবক-শিক্ষক সভা</span
+              >
+            </div>
+            <div class="about-highlight-item">
+              <span class="highlight-dot"></span
+              ><span
+                data-bn="সহশিক্ষা কার্যক্রম ও ক্রীড়া সুবিধা"
+                data-en="Co-curricular activities and sports facilities"
+                >সহশিক্ষা কার্যক্রম ও ক্রীড়া সুবিধা</span
+              >
+            </div>
+            <div class="about-highlight-item">
+              <span class="highlight-dot"></span
+              ><span
+                data-bn="ডিজিটাল লাইব্রেরি ও ICT শিক্ষা"
+                data-en="Digital library and ICT education"
+                >ডিজিটাল লাইব্রেরি ও ICT শিক্ষা</span
+              >
+            </div>
+          </div>
+
+          <a
+            href="html/headteacher.html"
+            class="btn-primary"
+            style="
+              display: inline-flex;
+              font-size: 0.9rem;
+              padding: 0.75rem 1.5rem;
+            "
+          >
+            🎓
+            <span
+              data-bn="প্রধান শিক্ষকের বার্তা পড়ুন"
+              data-en="Read Head Teacher's Message"
+              >প্রধান শিক্ষকের বার্তা পড়ুন</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     দ্রুত লিংক — Quick Links Grid
+     ============================================================ -->
+    <section class="quicklinks-section" aria-label="Quick Links">
+      <div class="section-header reveal">
+        <span
+          class="section-eyebrow"
+          data-bn="দ্রুত অ্যাক্সেস"
+          data-en="Quick Access"
+          >দ্রুত অ্যাক্সেস</span
+        >
+        <h2
+          class="section-title"
+          data-bn="আপনি যা খুঁজছেন"
+          data-en="Find What You Need"
+        >
+          আপনি যা খুঁজছেন
+        </h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="quicklinks-grid">
+        <a href="html/Admission.html" class="ql-card c-gold reveal">
+          <div class="ql-icon gold-bg">📝</div>
+          <div class="ql-body">
+            <div
+              class="ql-title"
+              data-bn="ভর্তির আবেদন"
+              data-en="Admission Form"
+            >
+              ভর্তির আবেদন
+            </div>
+            <div
+              class="ql-desc"
+              data-bn="অনলাইনে ভর্তি ফর্ম পূরণ করুন"
+              data-en="Fill online admission form"
+            >
+              অনলাইনে ভর্তি ফর্ম পূরণ করুন
+            </div>
+          </div>
+          <span class="ql-arrow">→</span>
+        </a>
+
+        <a href="html/Faculty.html" class="ql-card c-blue reveal">
+          <div class="ql-icon blue-bg">👨‍🏫</div>
+          <div class="ql-body">
+            <div class="ql-title" data-bn="শিক্ষকবৃন্দ" data-en="Our Faculty">
+              শিক্ষকবৃন্দ
+            </div>
+            <div
+              class="ql-desc"
+              data-bn="সকল শিক্ষকের তথ্য দেখুন"
+              data-en="View all teacher profiles"
+            >
+              সকল শিক্ষকের তথ্য দেখুন
+            </div>
+          </div>
+          <span class="ql-arrow">→</span>
+        </a>
+
+        <a href="html/Student.html" class="ql-card c-emerald reveal">
+          <div class="ql-icon emerald-bg">📚</div>
+          <div class="ql-body">
+            <div
+              class="ql-title"
+              data-bn="শিক্ষার্থী তালিকা"
+              data-en="Student Roster"
+            >
+              শিক্ষার্থী তালিকা
+            </div>
+            <div
+              class="ql-desc"
+              data-bn="শ্রেণী অনুযায়ী শিক্ষার্থী দেখুন"
+              data-en="View students by class"
+            >
+              শ্রেণী অনুযায়ী শিক্ষার্থী দেখুন
+            </div>
+          </div>
+          <span class="ql-arrow">→</span>
+        </a>
+
+        <a href="html/headteacher.html" class="ql-card c-gold reveal">
+          <div class="ql-icon gold-bg">🎓</div>
+          <div class="ql-body">
+            <div
+              class="ql-title"
+              data-bn="প্রধান শিক্ষক"
+              data-en="Head Teacher"
+            >
+              প্রধান শিক্ষক
+            </div>
+            <div
+              class="ql-desc"
+              data-bn="প্রধান শিক্ষকের পরিচিতি ও বার্তা"
+              data-en="Head teacher profile & speech"
+            >
+              প্রধান শিক্ষকের পরিচিতি ও বার্তা
+            </div>
+          </div>
+          <span class="ql-arrow">→</span>
+        </a>
+
+        <a href="html/contract.html" class="ql-card c-blue reveal">
+          <div class="ql-icon sky-bg">📞</div>
+          <div class="ql-body">
+            <div class="ql-title" data-bn="যোগাযোগ করুন" data-en="Contact Us">
+              যোগাযোগ করুন
+            </div>
+            <div
+              class="ql-desc"
+              data-bn="ঠিকানা, ফোন ও মানচিত্র"
+              data-en="Address, phone & map"
+            >
+              ঠিকানা, ফোন ও মানচিত্র
+            </div>
+          </div>
+          <span class="ql-arrow">→</span>
+        </a>
+
+        <a href="html/assistant-head.html" class="ql-card c-emerald reveal">
+          <div class="ql-icon purple-bg">🏅</div>
+          <div class="ql-body">
+            <div
+              class="ql-title"
+              data-bn="সহকারী প্রধান শিক্ষক"
+              data-en="Assistant Head"
+            >
+              সহকারী প্রধান শিক্ষক
+            </div>
+            <div
+              class="ql-desc"
+              data-bn="সহকারী প্রধান শিক্ষকের পরিচিতি"
+              data-en="Assistant headmaster profile"
+            >
+              সহকারী প্রধান শিক্ষকের পরিচিতি
+            </div>
+          </div>
+          <span class="ql-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     বিজ্ঞপ্তি বোর্ড — Notice Board + Events
+     নোটিস পরিবর্তন করতে notice-item গুলো সম্পাদনা করুন
+     ============================================================ -->
+    <section class="notices-section" aria-label="Notice Board">
+      <div class="notices-container">
+        <!-- বিজ্ঞপ্তি তালিকা -->
+        <div>
+          <div
+            class="section-header"
+            style="text-align: left; margin-bottom: 1.75rem"
+          >
+            <span
+              class="section-eyebrow"
+              data-bn="সর্বশেষ বিজ্ঞপ্তি"
+              data-en="Latest Notices"
+              >সর্বশেষ বিজ্ঞপ্তি</span
+            >
+            <h2
+              class="section-title section-title-light"
+              data-bn="নোটিশ বোর্ড"
+              data-en="Notice Board"
+            >
+              নোটিশ বোর্ড
+            </h2>
+            <div class="section-underline" style="margin: 0"></div>
+          </div>
+
+          <div class="notices-list">
+            <article class="notice-item reveal">
+              <div class="notice-date-box">
+                <div class="notice-day">২৫</div>
+                <div class="notice-month" data-bn="ডিসে" data-en="Dec">
+                  ডিসে
+                </div>
+              </div>
+              <div class="notice-divider"></div>
+              <div class="notice-content">
+                <span
+                  class="notice-badge badge-important"
+                  data-bn="জরুরি"
+                  data-en="Important"
+                  >জরুরি</span
+                >
+                <p
+                  class="notice-title"
+                  data-bn="বার্ষিক পরীক্ষার সময়সূচী — ২০২৫"
+                  data-en="Annual Exam Schedule — 2025"
+                >
+                  বার্ষিক পরীক্ষার সময়সূচী — ২০২৫
+                </p>
+                <p
+                  class="notice-desc"
+                  data-bn="বার্ষিক পরীক্ষা ২০ জানুয়ারি, ২০২৫ থেকে শুরু হবে। সকল শিক্ষার্থীরা নিজ নিজ প্রবেশপত্র সংগ্রহ করুন।"
+                  data-en="Annual exam begins 20 January 2025. Students must collect their admit cards."
+                >
+                  বার্ষিক পরীক্ষা ২০ জানুয়ারি, ২০২৫ থেকে শুরু হবে। সকল
+                  শিক্ষার্থীরা নিজ নিজ প্রবেশপত্র সংগ্রহ করুন।
+                </p>
+              </div>
+            </article>
+
+            <article class="notice-item reveal">
+              <div class="notice-date-box">
+                <div class="notice-day">১৮</div>
+                <div class="notice-month" data-bn="ডিসে" data-en="Dec">
+                  ডিসে
+                </div>
+              </div>
+              <div class="notice-divider"></div>
+              <div class="notice-content">
+                <span
+                  class="notice-badge badge-academic"
+                  data-bn="একাডেমিক"
+                  data-en="Academic"
+                  >একাডেমিক</span
+                >
+                <p
+                  class="notice-title"
+                  data-bn="৬ষ্ঠ শ্রেণীতে ভর্তি বিজ্ঞপ্তি ২০২৫-২৬"
+                  data-en="Class 6 Admission Notice 2025-26"
+                >
+                  ৬ষ্ঠ শ্রেণীতে ভর্তি বিজ্ঞপ্তি ২০২৫-২৬
+                </p>
+                <p
+                  class="notice-desc"
+                  data-bn="নতুন শিক্ষাবর্ষে ষষ্ঠ শ্রেণীতে ভর্তির আবেদন গ্রহণ শুরু হয়েছে। আসন সংখ্যা সীমিত।"
+                  data-en="Applications for Class 6 admissions are now open. Seats are limited."
+                >
+                  নতুন শিক্ষাবর্ষে ষষ্ঠ শ্রেণীতে ভর্তির আবেদন গ্রহণ শুরু হয়েছে।
+                </p>
+              </div>
+            </article>
+
+            <article class="notice-item reveal">
+              <div class="notice-date-box">
+                <div class="notice-day">১০</div>
+                <div class="notice-month" data-bn="ডিসে" data-en="Dec">
+                  ডিসে
+                </div>
+              </div>
+              <div class="notice-divider"></div>
+              <div class="notice-content">
+                <span
+                  class="notice-badge badge-result"
+                  data-bn="ফলাফল"
+                  data-en="Result"
+                  >ফলাফল</span
+                >
+                <p
+                  class="notice-title"
+                  data-bn="JSC পরীক্ষার ফলাফল — পাসের হার ৯৮%"
+                  data-en="JSC Exam Result — 98% Pass Rate"
+                >
+                  JSC পরীক্ষার ফলাফল — পাসের হার ৯৮%
+                </p>
+                <p
+                  class="notice-desc"
+                  data-bn="এই বছর JSC পরীক্ষায় আমাদের বিদ্যালয়ের পাসের হার ৯৮%। সকল শিক্ষার্থীকে অভিনন্দন।"
+                  data-en="Our school achieves 98% pass rate in JSC exam. Congratulations to all students."
+                >
+                  JSC পরীক্ষায় আমাদের বিদ্যালয়ের পাসের হার ৯৮%। সকল
+                  শিক্ষার্থীকে অভিনন্দন।
+                </p>
+              </div>
+            </article>
+
+            <article class="notice-item reveal">
+              <div class="notice-date-box">
+                <div class="notice-day">০৫</div>
+                <div class="notice-month" data-bn="ডিসে" data-en="Dec">
+                  ডিসে
+                </div>
+              </div>
+              <div class="notice-divider"></div>
+              <div class="notice-content">
+                <span
+                  class="notice-badge badge-event"
+                  data-bn="ইভেন্ট"
+                  data-en="Event"
+                  >ইভেন্ট</span
+                >
+                <p
+                  class="notice-title"
+                  data-bn="বার্ষিক ক্রীড়া প্রতিযোগিতা ১৫ ডিসেম্বর"
+                  data-en="Annual Sports Day on 15 December"
+                >
+                  বার্ষিক ক্রীড়া প্রতিযোগিতা ১৫ ডিসেম্বর
+                </p>
+                <p
+                  class="notice-desc"
+                  data-bn="আগামী ১৫ ডিসেম্বর বিদ্যালয় মাঠে বার্ষিক ক্রীড়া প্রতিযোগিতা অনুষ্ঠিত হবে। সকলকে অংশগ্রহণের আমন্ত্রণ।"
+                  data-en="Annual sports competition on 15 Dec at school grounds. All are invited to participate."
+                >
+                  আগামী ১৫ ডিসেম্বর বিদ্যালয় মাঠে বার্ষিক ক্রীড়া প্রতিযোগিতা
+                  অনুষ্ঠিত হবে।
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- আসন্ন ইভেন্ট সাইডবার -->
+        <aside class="events-sidebar" aria-label="Upcoming Events">
+          <div class="events-card">
+            <p
+              class="events-card-title"
+              data-bn="📅 আসন্ন অনুষ্ঠান"
+              data-en="📅 Upcoming Events"
+            >
+              📅 আসন্ন অনুষ্ঠান
+            </p>
+            <ul>
+              <li class="event-item">
+                <span class="event-bullet bullet-gold"></span>
+                <div>
+                  <div
+                    class="event-title"
+                    data-bn="বার্ষিক ক্রীড়া প্রতিযোগিতা"
+                    data-en="Annual Sports Day"
+                  >
+                    বার্ষিক ক্রীড়া প্রতিযোগিতা
+                  </div>
+                  <div class="event-date">১৫ ডিসেম্বর, ২০২৪</div>
+                </div>
+              </li>
+              <li class="event-item">
+                <span class="event-bullet bullet-blue"></span>
+                <div>
+                  <div
+                    class="event-title"
+                    data-bn="বার্ষিক পুরস্কার বিতরণী"
+                    data-en="Annual Prize Giving"
+                  >
+                    বার্ষিক পুরস্কার বিতরণী
+                  </div>
+                  <div class="event-date">২২ ডিসেম্বর, ২০২৪</div>
+                </div>
+              </li>
+              <li class="event-item">
+                <span class="event-bullet bullet-emerald"></span>
+                <div>
+                  <div
+                    class="event-title"
+                    data-bn="নতুন শিক্ষাবর্ষ শুরু"
+                    data-en="New Academic Year Begins"
+                  >
+                    নতুন শিক্ষাবর্ষ শুরু
+                  </div>
+                  <div class="event-date">০১ জানুয়ারি, ২০২৫</div>
+                </div>
+              </li>
+              <li class="event-item">
+                <span class="event-bullet bullet-red"></span>
+                <div>
+                  <div
+                    class="event-title"
+                    data-bn="বার্ষিক পরীক্ষা শুরু"
+                    data-en="Annual Exam Begins"
+                  >
+                    বার্ষিক পরীক্ষা শুরু
+                  </div>
+                  <div class="event-date">২০ জানুয়ারি, ২০২৫</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="events-card"
+            style="
+              background: rgba(245, 158, 11, 0.06);
+              border-color: rgba(245, 158, 11, 0.2);
+            "
+          >
+            <p
+              class="events-card-title"
+              style="color: var(--gold-light)"
+              data-bn="📞 জরুরি যোগাযোগ"
+              data-en="📞 Emergency Contact"
+            >
+              📞 জরুরি যোগাযোগ
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.6rem">
+              <div class="event-item" style="border: none; padding: 0.35rem 0">
+                <span style="font-size: 1rem">📞</span>
+                <div>
+                  <div
+                    class="event-title"
+                    data-bn="প্রধান শিক্ষক"
+                    data-en="Head Teacher"
+                  >
+                    প্রধান শিক্ষক
+                  </div>
+                  <div class="event-date">01700-000000</div>
+                </div>
+              </div>
+              <div class="event-item" style="border: none; padding: 0.35rem 0">
+                <span style="font-size: 1rem">📞</span>
+                <div>
+                  <div class="event-title" data-bn="অফিস" data-en="Office">
+                    অফিস
+                  </div>
+                  <div class="event-date">01800-000000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     ফুটার — Footer
+     ঠিকানা/ফোন পরিবর্তন করতে নিচের তথ্য সম্পাদনা করুন
+     ============================================================ -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- ব্র্যান্ড কলাম -->
+          <div class="footer-brand">
+            <div
+              class="school-crest"
+              style="
+                width: 56px;
+                height: 56px;
+                font-size: 0.75rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <div aria-hidden="true">
+                <img class="lo" src="image/BHS.png" alt="nav-logo" srcset="" />
+              </div>
+            </div>
+            <div class="footer-brand-name">Bhomradaha High School</div>
+            <div class="footer-brand-sub">ভোমরাদহ উচ্চ বিদ্যালয়</div>
+            <p
+              class="footer-brand-desc"
+              data-bn="মানসম্পন্ন শিক্ষা ও সুনাগরিক তৈরিতে প্রতিশ্রুতিবদ্ধ — ১৯৫৮ থেকে আজ পর্যন্ত।"
+              data-en="Committed to quality education and shaping future citizens since 1958."
+            >
+              মানসম্পন্ন শিক্ষা ও সুনাগরিক তৈরিতে প্রতিশ্রুতিবদ্ধ — ১৯৫৮ থেকে আজ
+              পর্যন্ত।
+            </p>
+            <span class="footer-eiin">🆔 EIIN: 129647</span>
+          </div>
+
+          <!-- দ্রুত লিংক -->
+          <div>
+            <p
+              class="footer-col-title"
+              data-bn="দ্রুত লিংক"
+              data-en="Quick Links"
+            >
+              দ্রুত লিংক
+            </p>
+            <ul class="footer-links">
+              <li><a href="index.html" data-bn="হোম" data-en="Home">হোম</a></li>
+              <li>
+                <a
+                  href="html/Faculty.html"
+                  data-bn="শিক্ষকবৃন্দ"
+                  data-en="Faculty"
+                  >শিক্ষকবৃন্দ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="html/Student.html"
+                  data-bn="শিক্ষার্থী"
+                  data-en="Students"
+                  >শিক্ষার্থী</a
+                >
+              </li>
+              <li>
+                <a
+                  href="html/Admission.html"
+                  data-bn="ভর্তি"
+                  data-en="Admission"
+                  >ভর্তি</a
+                >
+              </li>
+              <li>
+                <a href="html/contract.html" data-bn="যোগাযোগ" data-en="Contact"
+                  >যোগাযোগ</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- প্রশাসন লিংক -->
+          <div>
+            <p
+              class="footer-col-title"
+              data-bn="প্রশাসন"
+              data-en="Administration"
+            >
+              প্রশাসন
+            </p>
+            <ul class="footer-links">
+              <li>
+                <a
+                  href="html/headteacher.html"
+                  data-bn="প্রধান শিক্ষক"
+                  data-en="Head Teacher"
+                  >প্রধান শিক্ষক</a
+                >
+              </li>
+              <li>
+                <a
+                  href="html/assistant-head.html"
+                  data-bn="সহকারী প্রধান"
+                  data-en="Asst. Head"
+                  >সহকারী প্রধান</a
+                >
+              </li>
+              <li>
+                <a
+                  href="html/class6.html"
+                  data-bn="৬ষ্ঠ শ্রেণী"
+                  data-en="Class 6"
+                  >৬ষ্ঠ শ্রেণী</a
+                >
+              </li>
+              <li>
+                <a href="html/class9.html" data-bn="৯ম শ্রেণী" data-en="Class 9"
+                  >৯ম শ্রেণী</a
+                >
+              </li>
+              <li>
+                <a
+                  href="html/class10.html"
+                  data-bn="১০ম শ্রেণী"
+                  data-en="Class 10"
+                  >১০ম শ্রেণী</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- যোগাযোগ তথ্য -->
+          <div>
+            <p
+              class="footer-col-title"
+              data-bn="যোগাযোগ তথ্য"
+              data-en="Contact Info"
+            >
+              যোগাযোগ তথ্য
+            </p>
+            <ul class="contact-info-list">
+              <li class="contact-info-item">
+                <span class="icon">📍</span>
+                <span
+                  data-bn="ভোমরাদহ, পিরগঞ্জ, ঠাকুরগাঁও-৫১০০"
+                  data-en="Bhomradaha, Pirganj, Thakurgaon-5100"
+                  >ভোমরাদহ, পিরগঞ্জ, ঠাকুরগাঁও-৫১০০</span
+                >
+              </li>
+              <li class="contact-info-item">
+                <span class="icon">📞</span>
+                <span>01700-000000 / 01800-000000</span>
+              </li>
+              <li class="contact-info-item">
+                <span class="icon">📧</span>
+                <span>bhspirganj@edu.bd</span>
+              </li>
+              <li class="contact-info-item">
+                <span class="icon">🕗</span>
+                <span
+                  data-bn="শনি–বৃহস্পতি: সকাল ৯টা – বিকাল ৪টা"
+                  data-en="Sun–Thu: 9 AM – 4 PM"
+                  >রবি–বৃহস্পতি: সকাল ৯টা – বিকাল ৪টা</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ডেভেলপার সিগনেচার ও কপিরাইট -->
+        <div class="footer-dev-sig">
+          <p
+            class="footer-copy"
+            data-bn="© ২০২৪ ভোমরাদহ উচ্চ বিদ্যালয়। সর্বস্বত্ব সংরক্ষিত।"
+            data-en="© 2024 Bhomradaha High School. All rights reserved."
+          >
+            © ২০২৪ ভোমরাদহ উচ্চ বিদ্যালয়। সর্বস্বত্ব সংরক্ষিত।
+          </p>
+          <button class="footer-ahasan-sig" onclick="openDevModal()">
+            ✨
+            <span
+              data-bn="ডিজাইন ও ডেভেলপমেন্ট By: AHASAN"
+              data-en="Designed & Developed By: AHASAN"
+              >ডিজাইন ও ডেভেলপমেন্ট By: AHASAN</span
+            >
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- উপরে ফেরার বাটন -->
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
